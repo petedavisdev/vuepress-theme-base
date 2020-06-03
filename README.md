@@ -19,11 +19,11 @@ The aim of this theme is to provide a starter kit for designers and developers.
 ## Usage
 
 There are three ways to use this theme. 
-1. [Fork this repo to make your own theme](#fork)
-2. [Inherit in your website theme](#inherit)
-3. [Just add styles](#juststyle)
+1. [Fork this repo to develop and publish your own themes](#fork-this-repo-to-develop-and-publish-your-own-themes)
+2. [Install and inherit in your website theme](#install-and-inherit-in-your-website-theme)
+3. [Just add styles](#just-add-styles)
 
-### 1. Developing and publishing your own themes {: #fork}
+### 1. Fork this repo to develop and publish your own themes
 
 1. Fork this repo
 2. Rename your repo and edit the README and package.json files to describe you new theme
@@ -34,11 +34,11 @@ There are three ways to use this theme.
 
 This is what this theme was made for - every time I want to create and publish a new theme, I use a fork of this theme as a starting point.
 
-### 2. Inherit in your website theme {: #inherit}
+### 2. Install and inherit in your website theme
 
 If you are developing a one-off theme for your site, you can install this theme and then override layouts and components in your own .vuepress/theme folder.
 
-### 3. Just add styles {: #juststyle}
+### 3. Just add styles
 
 If you only need to add styles for a one-off website, you can do that in your .vuepress/styles folder.
 
