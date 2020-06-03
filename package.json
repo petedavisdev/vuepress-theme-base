@@ -4,6 +4,7 @@
   "description": "If you want to create your own VuePress themes, fork the repo!",
   "main": "index.js",
   "scripts": {
+    "start": "vuepress dev example --temp example/.temp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
