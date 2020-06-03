@@ -2,9 +2,9 @@
   "name": "vuepress-theme-base",
   "version": "0.1.0",
   "description": "If you want to create your own VuePress themes, fork the repo!",
-  "main": "index.js",
+  "main": ".vuepress/theme/layouts/Layout.vue",
   "scripts": {
-    "start": "vuepress dev example --temp example/.temp",
+    "start": "vuepress dev --temp .temp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
