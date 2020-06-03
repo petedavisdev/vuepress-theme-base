@@ -41,3 +41,10 @@ If you are developing a one-off theme for your site, you can install this theme 
 ### 3. Just add styles {: #juststyle}
 
 If you only need to add styles for a one-off website, you can do that in your .vuepress/styles folder.
+
+## Layouts
+This theme will have the following layouts:
+
+1. Landing Page (used for the homepage and any other introductory pages)
+2. Collection (used for listing blog posts, products, news, events, portfolio pieces etc.)
+3. Article (used for each individual blog post, product, news story, event, portfolio piece etc.)
