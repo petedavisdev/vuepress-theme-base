@@ -4,8 +4,6 @@
 
     <p>Looks like a broken link!</p>
 
-    <RouterLink to="/">
-      Take me home
-    </RouterLink>
+    <RouterLink to="/">Take me home</RouterLink>
   </div>
 </template>

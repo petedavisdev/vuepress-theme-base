@@ -1,4 +1,5 @@
 # (WIP) vuepress-theme-base
+
 > If you want to create your own VuePress theme, fork this repo!
 
 **Note: this is work in progress - please watch for releases**
@@ -7,7 +8,7 @@
 
 Building themes from scratch can be daunting. Overriding a default theme can be limiting.
 
-The aim of this theme is to provide a starter kit for designers and developers. 
+The aim of this theme is to provide a starter kit for designers and developers.
 
 ### This theme will include:
 
@@ -19,6 +20,7 @@ The aim of this theme is to provide a starter kit for designers and developers.
 ## Usage
 
 There are three options for using this theme:
+
 1. [Just add styles](#option-1-just-add-styles) for your website
 2. [Use as a parent theme](#option-2-use-as-a-parent-theme) for your own website theme
 3. [Fork this repo](#option-3-fork-and-develop-your-own-themes) to create and share your own VuePress themes.
@@ -43,8 +45,16 @@ If you are developing a one-off theme for your site, you can install this theme 
 This is what this theme was made for - every time I want to create and publish a new theme, I use a fork of this theme as a starting point.
 
 ## Layouts
+
 This theme will have the following layouts:
 
-1. Landing Page (used for the homepage and any other introductory pages)
-2. Collection (used for listing blog posts, products, news, events, portfolio pieces etc.)
-3. Article (used for each individual blog post, product, news story, event, portfolio piece etc.)
+- Layout
+- Blog
+- Article
+- 404
+
+## Components
+
+- Header
+- Footer
+- Collection
