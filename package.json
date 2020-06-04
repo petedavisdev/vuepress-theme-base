@@ -2,32 +2,42 @@
   "name": "vuepress-theme-base",
   "version": "0.1.0",
   "description": "If you want to create your own VuePress themes, fork the repo!",
-  "main": ".vuepress/theme/layouts/Layout.vue",
-  "scripts": {
-    "start": "vuepress dev --temp .temp",
-    "lint": "eslint . --ext .js,.vue",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/petedavisdev/vuepress-theme-base.git"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "eslint --fix"
-    }
-  },
   "keywords": [
     "VuePress",
     "Theme",
     "Starter"
   ],
-  "author": "Pete Davis (http://petedavis.dev/)",
-  "license": "MIT",
+  "homepage": "https://github.com/petedavisdev/vuepress-theme-base#readme",
   "bugs": {
     "url": "https://github.com/petedavisdev/vuepress-theme-base/issues"
   },
-  "homepage": "https://github.com/petedavisdev/vuepress-theme-base#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petedavisdev/vuepress-theme-base.git"
+  },
+  "license": "MIT",
+  "author": "Pete Davis (http://petedavis.dev/)",
+  "main": ".vuepress/theme/layouts/Layout.vue",
+  "scripts": {
+    "lint": "eslint . --ext .js,.vue --fix",
+    "start": "vuepress dev --temp .temp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "package.json": [
+      "sort-package-json",
+      "git add"
+    ]
+  },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "conventional-changelog-cli": "^2.0.34",
