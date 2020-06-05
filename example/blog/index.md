@@ -1,0 +1,5 @@
+---
+layout: Collection
+---
+
+# Blog

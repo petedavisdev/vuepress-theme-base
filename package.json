@@ -1,0 +1,61 @@
+{
+  "name": "vuepress-theme-base",
+  "version": "0.1.0",
+  "description": "If you want to create your own VuePress themes, fork the repo!",
+  "keywords": [
+    "VuePress",
+    "Theme",
+    "Starter"
+  ],
+  "homepage": "https://github.com/petedavisdev/vuepress-theme-base#readme",
+  "bugs": {
+    "url": "https://github.com/petedavisdev/vuepress-theme-base/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petedavisdev/vuepress-theme-base.git"
+  },
+  "license": "MIT",
+  "author": "Pete Davis (http://petedavis.dev/)",
+  "main": "theme/index.js",
+  "scripts": {
+    "build": "vuepress build",
+    "dev": "vuepress dev example --temp .temp",
+    "lint": "eslint . --ext .js,.vue --fix",
+    "prepublishOnly": "npm run build example && conventional-changelog -p angular -r 2 -i CHANGELOG.md -s",
+    "start": "npm run lint && npm run dev"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "package.json": [
+      "sort-package-json",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "conventional-changelog-cli": "^2.0.34",
+    "eslint": "^7.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-sherry": "0.0.1",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-vue": "^6.2.2",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.7",
+    "prettier": "^2.0.5",
+    "sort-package-json": "^1.44.0",
+    "vuepress": "^1.5.0",
+    "watchpack": "^1.6.1"
+  },
+  "peerDependencies": {
+    "vuepress": "^1.0.0"
+  }
+}
