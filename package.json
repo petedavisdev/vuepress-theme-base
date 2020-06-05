@@ -19,9 +19,11 @@
   "author": "Pete Davis (http://petedavis.dev/)",
   "main": ".vuepress/theme/layouts/Layout.vue",
   "scripts": {
+    "build": "vuepress build",
+    "dev": "vuepress dev example --temp .temp",
     "lint": "eslint . --ext .js,.vue --fix",
-    "start": "vuepress dev --temp .temp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublishOnly": "npm run build && conventional-changelog -p angular -r 2 -i CHANGELOG.md -s",
+    "start": "npm run lint && npm run dev"
   },
   "husky": {
     "hooks": {

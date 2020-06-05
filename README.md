@@ -1,6 +1,6 @@
-# (WIP) vuepress-theme-base
+# vuepress-theme-base (WIP)
 
-> If you want to create your own VuePress theme, fork this repo!
+> Create your own VuePress themes
 
 **Note: this is work in progress - please watch for releases**
 
