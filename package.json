@@ -17,12 +17,12 @@
   },
   "license": "MIT",
   "author": "Pete Davis (http://petedavis.dev/)",
-  "main": ".vuepress/theme/layouts/Layout.vue",
+  "main": "theme/index.js",
   "scripts": {
     "build": "vuepress build",
     "dev": "vuepress dev example --temp .temp",
     "lint": "eslint . --ext .js,.vue --fix",
-    "prepublishOnly": "npm run build && conventional-changelog -p angular -r 2 -i CHANGELOG.md -s",
+    "prepublishOnly": "npm run build example && conventional-changelog -p angular -r 2 -i CHANGELOG.md -s",
     "start": "npm run lint && npm run dev"
   },
   "husky": {
@@ -52,6 +52,10 @@
     "lint-staged": "^10.2.7",
     "prettier": "^2.0.5",
     "sort-package-json": "^1.44.0",
-    "vuepress": "^1.5.0"
+    "vuepress": "^1.5.0",
+    "watchpack": "^1.6.1"
+  },
+  "peerDependencies": {
+    "vuepress": "^1.0.0"
   }
 }

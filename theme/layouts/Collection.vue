@@ -1,19 +1,19 @@
 <template>
   <Layout>
     <template v-slot:mainEnd>
-      <List />
+      <PageList />
     </template>
   </Layout>
 </template>
 
 <script>
-import List from '@theme/components/List.vue'
+import PageList from '@theme/components/PageList.vue'
 import Layout from '@theme/layouts/Layout.vue'
 
 export default {
   components: {
-    List,
-    Layout
-  }
+    PageList,
+    Layout,
+  },
 }
 </script>

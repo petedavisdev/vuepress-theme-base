@@ -8,7 +8,7 @@
 
 Building themes from scratch can be daunting. Overriding a default theme can be limiting.
 
-The aim of this theme is to provide a starter kit for designers and developers.
+The aim of this theme is to provide a starter kit for designers and developers who want to create their own VuePress themes.
 
 ### This theme will include:
 
