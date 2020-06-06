@@ -1,3 +1,3 @@
 <template>
-  <RouterLink to="/">{{ $site.title }}</RouterLink>
+  <RouterLink to="/" title="Go to homepage">{{ $site.title }}</RouterLink>
 </template>
