@@ -1,5 +1,7 @@
 <template>
   <div class="ThemeLayout">
+    <slot name="headerBefore" />
+  
     <header>
       <slot name="headerStart" />
       <HomeLink />
@@ -7,9 +9,7 @@
       <slot name="headerEnd" />
     </header>
 
-    <aside>
-      <slot name="mainBefore" />
-    </aside>
+    <slot name="headerAfter" />
 
     <main>
       <slot name="mainStart" />
@@ -17,15 +17,15 @@
       <slot name="mainEnd" />
     </main>
 
-    <aside>
-      <slot name="mainAfter" />
-    </aside>
+    <slot name="footerBefore" />
 
     <footer>
       <slot name="footerStart" />
       <EndCredit />
       <slot name="footerEnd" />
     </footer>
+    
+    <slot name="footerAfter" />
   </div>
 </template>
 
