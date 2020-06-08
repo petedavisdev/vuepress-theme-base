@@ -8,12 +8,10 @@
 
 <script>
 import PageList from '@theme/components/PageList.vue'
-import Layout from '@theme/layouts/Layout.vue'
 
 export default {
   components: {
     PageList,
-    Layout,
   },
 }
 </script>
