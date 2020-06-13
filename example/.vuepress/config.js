@@ -7,11 +7,10 @@ module.exports = {
       { text: 'Docs', link: '/docs/' },
       { text: 'Blog', link: '/blog/' },
     ],
-    defaultLayout: 'Layout',
-    collections: [
+    defaultLayouts: [
       {
-        path: 'blog',
-        layout: 'Collection',
+        directory: 'blog',
+        layout: 'Post',
       },
     ],
   },
