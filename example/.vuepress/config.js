@@ -7,5 +7,12 @@ module.exports = {
       { text: 'Docs', link: '/docs/' },
       { text: 'Blog', link: '/blog/' },
     ],
+    defaultLayout: 'Layout',
+    collections: [
+      {
+        path: 'blog',
+        layout: 'Collection',
+      },
+    ],
   },
 }
