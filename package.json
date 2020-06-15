@@ -19,7 +19,7 @@
   "author": "Pete Davis (http://petedavis.dev/)",
   "main": "theme/index.js",
   "scripts": {
-    "build": "vuepress build",
+    "build": "npm run lint && vuepress build",
     "dev": "vuepress dev example --temp .temp",
     "lint": "eslint . --ext .js,.vue --fix",
     "prepublishOnly": "npm run build example && conventional-changelog -p angular -r 2 -i CHANGELOG.md -s",
