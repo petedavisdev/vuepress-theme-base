@@ -7,7 +7,7 @@
     "Theme",
     "Starter"
   ],
-  "homepage": "https://github.com/petedavisdev/vuepress-theme-base#readme",
+  "homepage": "https://petedavisdev.github.io/vuepress-theme-base",
   "bugs": {
     "url": "https://github.com/petedavisdev/vuepress-theme-base/issues"
   },
@@ -19,10 +19,11 @@
   "author": "Pete Davis (http://petedavis.dev/)",
   "main": "theme/index.js",
   "scripts": {
-    "build": "npm run lint && vuepress build",
+    "build": "vuepress build example",
+    "deploy": "npm run lint && npm run build && gh-pages -d example/.vuepress/dist",
     "dev": "vuepress dev example --temp .temp",
     "lint": "eslint . --ext .js,.vue --fix",
-    "prepublishOnly": "npm run build example && conventional-changelog -p angular -r 2 -i CHANGELOG.md -s",
+    "prepublishOnly": "npm run build && conventional-changelog -p angular -r 2 -i CHANGELOG.md -s",
     "start": "npm run lint && npm run dev"
   },
   "husky": {
@@ -48,6 +49,7 @@
     "eslint-config-sherry": "0.0.1",
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-vue": "^6.2.2",
+    "gh-pages": "^3.0.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.7",
     "prettier": "^2.0.5",

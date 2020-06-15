@@ -39,8 +39,8 @@ If you are developing a one-off theme for your site, you can install this theme 
 2. Edit the README and package.json files to describe you new theme
 3. Clone your repo to your computer and start making changes
 4. Run `npm start` to see your theme with the example content
-5. Run `npm test` to test your theme
-6. When you are happy with your theme, publish it to NPM so that it can be installed in any VuePress site
+5. Run `npm run deploy` to deploy example site on GitHub Pages
+6. When you are happy with your theme, `npm publish` so that it can be installed in any VuePress site
 
 This is what this theme was made for - every time I want to create and publish a new theme, I use a fork of this theme as a starting point.
 
