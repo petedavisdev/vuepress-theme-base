@@ -20,7 +20,7 @@
   "main": "theme/index.js",
   "scripts": {
     "build": "vuepress build example",
-    "deploy": "npm run lint && npm run build && gh-pages -d example/.vuepress/dist",
+    "deploy": "npm run build && gh-pages -d example/.vuepress/dist",
     "dev": "vuepress dev example --temp .temp",
     "lint": "eslint . --ext .js,.vue --fix",
     "prepublishOnly": "npm run build && conventional-changelog -p angular -r 2 -i CHANGELOG.md -s",
