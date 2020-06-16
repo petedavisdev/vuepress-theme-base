@@ -12,6 +12,10 @@ This theme is designed to be styled, extended or used as a template. The aim is 
 
 This theme will be multipurpose, with [features](#features) to help you create a blog, docs, products, events or landing pages etc.
 
+## Example (WIP)
+
+[petedavisdev.github.io/vuepress-theme-base](https://petedavisdev.github.io/vuepress-theme-base/)
+
 ## Usage
 
 There are three options for using this theme:
@@ -43,7 +47,7 @@ If you are developing a one-off theme for your site, you can install this theme 
 6. When you are happy with your theme, `npm publish` so that it can be installed in any VuePress site
 5. Run `npm run deploy` to deploy example site on GitHub Pages
 
-## Features
+## Features (WIP)
 
 ### Layouts
 This theme will provide a starter set of layouts that output accessible, semantic html, including:
