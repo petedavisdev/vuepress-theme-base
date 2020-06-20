@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <template v-slot:mainEnd>
-      <PageList />
+      <PageList directory="blog" />
     </template>
   </Layout>
 </template>
