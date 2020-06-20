@@ -1,6 +1,5 @@
 <template>
   <section>
-    {{ $site.pages }}
     <article v-for="page in pages" :key="page.id">
       <h2>
         <RouterLink :to="page.path">{{ page.title }}</RouterLink>

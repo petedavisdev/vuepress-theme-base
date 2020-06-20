@@ -1,5 +1,5 @@
 ---
-layout: Collection
+layout: Blog
 ---
 
 # Blog

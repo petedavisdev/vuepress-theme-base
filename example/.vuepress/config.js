@@ -7,11 +7,16 @@ module.exports = {
     nav: [
       { text: 'Docs', link: '/docs/' },
       { text: 'Blog', link: '/blog/' },
+      { text: 'Shop', link: '/shop/' },
     ],
     defaultLayouts: [
       {
         directory: 'blog',
         layout: 'Post',
+      },
+      {
+        directory: 'shop',
+        layout: 'Product',
       },
     ],
   },
