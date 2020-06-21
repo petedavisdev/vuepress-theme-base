@@ -1,5 +1,3 @@
----
-layout: Blog
----
-
 # Blog
+
+<PageList directory="blog" />
