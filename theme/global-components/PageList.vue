@@ -23,7 +23,7 @@ export default {
     },
     tag: {
       type: String,
-      default: null
+      default: null,
     },
     length: {
       type: Number,
@@ -34,7 +34,7 @@ export default {
   data() {
     return {
       currentTag: this.tag,
-      currentLength: this.length
+      currentLength: this.length,
     }
   },
   computed: {

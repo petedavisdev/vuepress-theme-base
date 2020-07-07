@@ -6,11 +6,11 @@
 
 <script>
 export default {
-    props: {
-        pages: {
-            type: Array,
-            required: true
-        }
-    }
+  props: {
+    page: {
+      type: Object,
+      required: true,
+    },
+  },
 }
 </script>

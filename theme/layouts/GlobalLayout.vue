@@ -10,10 +10,14 @@ export default {
   computed: {
     layout() {
       if (this.$page.path) {
-        return this.isLayout(this.$page.frontmatter.layout) || this.hasDefaultLayout() || 'Layout';
+        return (
+          this.isLayout(this.$page.frontmatter.layout) ||
+          this.hasDefaultLayout() ||
+          'Layout'
+        )
       }
-      
-      return 'NotFound';
+
+      return 'NotFound'
     },
   },
   methods: {
@@ -29,8 +33,8 @@ export default {
 
         return layout && this.isLayout(layout)
       }
-      
-      return false;
+
+      return false
     },
   },
 }

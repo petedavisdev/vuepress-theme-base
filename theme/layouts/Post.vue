@@ -2,7 +2,7 @@
   <Layout>
     <template v-slot:mainStart>
       <h1>{{ $page.title }}</h1>
-      <small>{{ $page.lastUpdated }}</small>
+      <small>{{ $page.key }}</small>
     </template>
   </Layout>
 </template>
