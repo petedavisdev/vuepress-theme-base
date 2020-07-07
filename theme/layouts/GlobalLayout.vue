@@ -28,7 +28,7 @@ export default {
       if (this.$themeConfig.defaultLayouts) {
         const { layout } =
           this.$themeConfig.defaultLayouts.find(({ directory }) => {
-            return this.$page.relativePath.startsWith(directory)
+            return this.$page.relativePath.startsWith(directory + '/')
           }) || {}
 
         return layout && this.isLayout(layout)

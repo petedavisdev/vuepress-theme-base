@@ -1,3 +1,3 @@
 ---
-Docs
+title: Docs
 ---
