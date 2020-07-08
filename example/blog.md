@@ -1,0 +1,3 @@
+# Blog
+
+<PostList directory="blog" />

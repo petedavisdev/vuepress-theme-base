@@ -4,4 +4,4 @@ title: Home
 
 # Homepage test
 
-Welcome to a site
+Welcome to our site
