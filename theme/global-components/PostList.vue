@@ -1,15 +1,18 @@
 <template>
   <div class="PostList">
     <section>
-      <article v-for="post in posts" :key="post.id">
-        <PostListItem :post="post" />
-      </article>
+      <PostListItem v-for="post in posts" :key="post.id" :post="post" />
     </section>
   </div>
 </template>
 
 <script>
+import PostListItem from '@theme/components/PostListItem.vue'
+
 export default {
+  components: {
+    PostListItem,
+  },
   props: {
     directory: String,
     item: String,
