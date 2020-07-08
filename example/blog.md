@@ -1,3 +1,3 @@
 # Blog
 
-<PageList directory="blog" />
+<PostList directory="blog" />

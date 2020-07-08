@@ -1,13 +1,15 @@
 <template>
   <h2>
-    <RouterLink :to="page.path">{{ page.title }}</RouterLink>
+    <RouterLink :to="post.path"
+      >{{ post.title }} {{ post.frontmatter.date }}</RouterLink
+    >
   </h2>
 </template>
 
 <script>
 export default {
   props: {
-    page: {
+    post: {
       type: Object,
       required: true,
     },

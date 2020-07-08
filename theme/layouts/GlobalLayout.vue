@@ -25,9 +25,9 @@ export default {
       return layout && this.$vuepress.getLayoutAsyncComponent(layout)
     },
     hasDefaultLayout() {
-      if (this.$themeConfig.defaultLayouts) {
+      if (this.$themeConfig.collections) {
         const { layout } =
-          this.$themeConfig.defaultLayouts.find(({ directory }) => {
+          this.$themeConfig.collections.find(({ directory }) => {
             return this.$page.relativePath.startsWith(directory + '/')
           }) || {}
 

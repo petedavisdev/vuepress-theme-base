@@ -1,3 +1,0 @@
-# Shop
-
-<PageList directory="shop" />
