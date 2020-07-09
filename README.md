@@ -71,10 +71,8 @@ This theme makes is easy to classify your pages into collections. You can set a 
 
 ``` js
 themeConfig: {
-  defaultLayouts: [
+  collections: [
     { directory: 'blog', layout: 'Post' },
-    { directory: 'shop', layout: 'Product' },
-    { directory: '', layout: 'LandingPage' }
   ]
 }
 ```
@@ -82,10 +80,11 @@ themeConfig: {
 You can then use the Collection theme to display lists of pages. You specify this in the frontmatter of the collection page, 'blog.md' for example could start with:
 
 ``` md
----
-title: Blog
-layout: Collection
----
+# Any markdown page
+
+Use the appropriate list component like so
+
+<PostList directory="blog" />
 ```
 
 ### Styling
