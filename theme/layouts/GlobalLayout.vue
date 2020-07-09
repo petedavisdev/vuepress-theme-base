@@ -1,7 +1,5 @@
 <template>
-  <div class="GlobalLayout">
-    <component :is="layout" />
-  </div>
+  <component :is="layout" />
 </template>
 
 <script>

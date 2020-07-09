@@ -1,8 +1,8 @@
 <template>
-  <div class="ThemeLayout">
+  <div class="Layout">
     <slot name="headerBefore" />
 
-    <header>
+    <header class="Layout-header">
       <slot name="headerStart" />
       <HomeLink />
       <NavPrimary />
@@ -11,7 +11,7 @@
 
     <slot name="headerAfter" />
 
-    <main>
+    <main class="Layout-main">
       <slot name="mainStart" />
       <Content />
       <slot name="mainEnd" />
@@ -19,7 +19,7 @@
 
     <slot name="footerBefore" />
 
-    <footer>
+    <footer class="Layout-footer">
       <slot name="footerStart" />
       <EndCredit />
       <slot name="footerEnd" />

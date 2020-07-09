@@ -1,10 +1,14 @@
 <template>
-  <article>
-    <h2>
-      <RouterLink :to="post.path">{{ post.title }}</RouterLink>
+  <article class="PostListItem">
+    <h2 class="PostListItem-heading">
+      <RouterLink class="PostListItem-link" :to="post.path">{{
+        post.title
+      }}</RouterLink>
     </h2>
-    <time :datetime="post.frontmatter.date">{{ formattedDate }}</time>
-    <img :src="post.frontmatter.image" alt />
+    <time class="PostListItem-date" :datetime="post.frontmatter.date">{{
+      formattedDate
+    }}</time>
+    <img class="PostListItem-image" :src="post.frontmatter.image" alt />
   </article>
 </template>
 

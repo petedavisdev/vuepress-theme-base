@@ -1,9 +1,11 @@
 <template>
-  <div class="theme-container">
-    <h1>404</h1>
+  <Layout>
+    <template v-slot:mainStart>
+      <h1>404</h1>
 
-    <p>Looks like a broken link!</p>
+      <p>Looks like a broken link!</p>
 
-    <RouterLink to="/">Take me home</RouterLink>
-  </div>
+      <RouterLink to="/">Take me home</RouterLink>
+    </template>
+  </Layout>
 </template>
