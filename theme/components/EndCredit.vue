@@ -1,6 +1,7 @@
 <template>
   <p class="EndCredit">
-    &copy; {{ new Date().getFullYear() }} Pete Davis | Built with
-    <a href="https://vuepress.vuejs.org/">VuePress</a>
+    &copy; {{ new Date().getFullYear() }} {{ $site.themeConfig.owner }} | Built
+    with
+    <a href="https://github.com/petedavisdev/vuepress-theme-base">VuePress</a>
   </p>
 </template>

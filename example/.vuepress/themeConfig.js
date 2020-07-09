@@ -10,4 +10,5 @@ module.exports = {
       layout: 'Post',
     },
   ],
+  owner: 'Pete Davis',
 }
