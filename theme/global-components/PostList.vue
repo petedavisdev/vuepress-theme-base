@@ -1,9 +1,7 @@
 <template>
-  <div class="PostList">
-    <section>
-      <PostListItem v-for="post in posts" :key="post.id" :post="post" />
-    </section>
-  </div>
+  <section class="PostList">
+    <PostListItem v-for="post in posts" :key="post.id" :post="post" />
+  </section>
 </template>
 
 <script>

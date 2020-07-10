@@ -1,14 +1,22 @@
 <template>
   <article class="PostListItem">
     <h2 class="PostListItem-heading">
-      <RouterLink class="PostListItem-link" :to="post.path">{{
-        post.title
-      }}</RouterLink>
+      <RouterLink class="PostListItem-link" :to="post.path">
+        {{ post.title }}
+      </RouterLink>
     </h2>
-    <time class="PostListItem-date" :datetime="post.frontmatter.date">{{
-      formattedDate
-    }}</time>
-    <img class="PostListItem-image" :src="post.frontmatter.image" alt />
+    <p v-if="post.frontmatter.summary" class="PostListItem-summary">
+      {{ post.frontmatter.summary }}
+    </p>
+    <time class="PostListItem-date" :datetime="post.frontmatter.date">
+      {{ formattedDate }}
+    </time>
+    <img
+      v-if="post.frontmatter.image"
+      class="PostListItem-image"
+      :src="post.frontmatter.image"
+      alt
+    />
   </article>
 </template>
 

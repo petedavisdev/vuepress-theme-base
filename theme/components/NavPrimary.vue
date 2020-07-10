@@ -6,9 +6,16 @@
         :key="item.text"
         class="NavPrimary-item"
       >
-        <RouterLink class="NavPrimary-link" :to="item.link">{{
+        <RouterLink
+          v-if="item.link.startsWith('/')"
+          class="NavPrimary-link"
+          :to="item.link"
+          >{{ item.text }}</RouterLink
+        >
+
+        <a v-else class="NavPrimary-link -external" :href="item.link">{{
           item.text
-        }}</RouterLink>
+        }}</a>
       </li>
     </ul>
   </nav>
