@@ -6,6 +6,7 @@ summary: This is my latest blog post about stuff
 tags:
   - A tag
   - Another tag
+  - An unlinked tag
 ---
 
 Lorem ipsum

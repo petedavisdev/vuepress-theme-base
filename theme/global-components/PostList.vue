@@ -1,6 +1,7 @@
 <template>
   <section class="PostList">
     <PostListItem v-for="post in posts" :key="post.id" :post="post" />
+    <p v-if="!posts.length">No posts found</p>
   </section>
 </template>
 
@@ -17,9 +18,9 @@ export default {
   },
   computed: {
     posts() {
-      const filteredPosts = this.filterByDirectory(this.$site.pages)
-      const taggedPosts = this.filterByTag(filteredPosts)
-      const sortedPosts = this.sortByDateDesc(taggedPosts)
+      const directoryPosts = this.filterByDirectory(this.$site.pages)
+      const tagPosts = this.filterByTag(directoryPosts)
+      const sortedPosts = this.sortByDateDesc(tagPosts)
       return sortedPosts
     },
   },
@@ -40,12 +41,15 @@ export default {
       return posts
     },
     filterByTag(posts) {
-      if (this.tag) {
+      const tag = this.tag && this.tag.toLowerCase()
+
+      if (tag) {
         return posts.filter((post) => {
-          if (
+          const postTags =
             post.frontmatter.tags &&
-            post.frontmatter.tags.includes(this.tag)
-          ) {
+            post.frontmatter.tags.map((tag) => tag.toLowerCase())
+
+          if (postTags && postTags.includes(tag)) {
             return posts
           }
         })

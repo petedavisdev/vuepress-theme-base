@@ -8,21 +8,8 @@
     <p v-if="post.frontmatter.summary" class="PostListItem-summary">
       {{ post.frontmatter.summary }}
     </p>
-    <time class="PostListItem-date" :datetime="post.frontmatter.date">{{
-      formattedDate
-    }}</time>
-    <ul v-if="post.frontmatter.tags" class="PostListItem-tag">
-      <li
-        v-for="tag in post.frontmatter.tags"
-        :key="tag.id"
-        class="PostListItem-tags"
-      >
-        <RouterLink v-if="getTagLink(tag)" :to="getTagLink(tag)">{{
-          tag
-        }}</RouterLink>
-        <slot v-else>{{ tag }}</slot>
-      </li>
-    </ul>
+    <DateTime :date="post.frontmatter.date" />
+    <TagList :tags="post.frontmatter.tags || null" />
     <img
       v-if="post.frontmatter.image"
       class="PostListItem-image"
