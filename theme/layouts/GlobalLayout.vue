@@ -25,9 +25,9 @@ export default {
     hasDefaultLayout() {
       if (this.$themeConfig.collections) {
         const { layout } =
-          this.$themeConfig.collections.find(({ directory }) => {
-            return this.$page.relativePath.startsWith(directory + '/')
-          }) || {}
+          this.$themeConfig.collections.find(({ directory }) =>
+            this.$page.relativePath.startsWith(directory + '/')
+          ) || {}
 
         return layout && this.isLayout(layout)
       }

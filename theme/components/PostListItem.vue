@@ -1,16 +1,15 @@
 <template>
   <article class="PostListItem">
     <h2 class="PostListItem-heading">
-      <RouterLink class="PostListItem-link" :to="post.path">
-        {{ post.title }}
-      </RouterLink>
+      <RouterLink class="PostListItem-link" :to="post.path">{{
+        post.title
+      }}</RouterLink>
     </h2>
     <p v-if="post.frontmatter.summary" class="PostListItem-summary">
       {{ post.frontmatter.summary }}
     </p>
-    <time class="PostListItem-date" :datetime="post.frontmatter.date">
-      {{ formattedDate }}
-    </time>
+    <DateTime :date="post.frontmatter.date" />
+    <TagList :tags="post.frontmatter.tags || null" />
     <img
       v-if="post.frontmatter.image"
       class="PostListItem-image"
@@ -36,6 +35,16 @@ export default {
         year: 'numeric',
         day: 'numeric',
       })
+    },
+  },
+  methods: {
+    getTagLink(tag) {
+      if (this.$site.themeConfig.tags) {
+        const { link } =
+          this.$site.themeConfig.tags.find(({ text }) => text === tag) || {}
+
+        return link
+      }
     },
   },
 }
