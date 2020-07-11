@@ -9,7 +9,10 @@
           :key="tag.id"
           class="PostListItem-tags"
         >
-          {{ tag }}
+          <RouterLink v-if="getTagLink(tag)" :to="getTagLink(tag)">
+            {{ tag }}
+          </RouterLink>
+          <slot v-else>{{ tag }}</slot>
         </li>
       </ul>
     </template>
@@ -26,6 +29,16 @@ export default {
         year: 'numeric',
         day: 'numeric',
       })
+    },
+  },
+  methods: {
+    getTagLink(tag) {
+      if (this.$site.themeConfig.tags) {
+        const { link } =
+          this.$site.themeConfig.tags.find(({ text }) => text === tag) || {}
+
+        return link
+      }
     },
   },
 }

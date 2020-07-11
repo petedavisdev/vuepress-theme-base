@@ -8,6 +8,7 @@ module.exports = {
       link: 'https://github.com/petedavisdev/vuepress-theme-base/',
     },
   ],
+  tags: [{ text: 'A tag', link: '/tag/a-tag/' }],
   collections: [
     {
       directory: 'blog',
