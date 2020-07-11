@@ -2,7 +2,16 @@
   <Layout>
     <template v-slot:mainStart>
       <h1>{{ $page.title }}</h1>
-      <small>{{ formattedDate }}</small>
+      <time>{{ formattedDate }}</time>
+      <ul v-if="$page.frontmatter.tags" class="PostListItem-tag">
+        <li
+          v-for="tag in $page.frontmatter.tags"
+          :key="tag.id"
+          class="PostListItem-tags"
+        >
+          {{ tag }}
+        </li>
+      </ul>
     </template>
   </Layout>
 </template>

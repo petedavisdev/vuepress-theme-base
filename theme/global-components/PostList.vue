@@ -13,11 +13,13 @@ export default {
   },
   props: {
     directory: String,
+    tag: String,
   },
   computed: {
     posts() {
       const filteredPosts = this.filterByDirectory(this.$site.pages)
-      const sortedPosts = this.sortByDate(filteredPosts)
+      const taggedPosts = this.filterByTag(filteredPosts)
+      const sortedPosts = this.sortByDateDesc(taggedPosts)
       return sortedPosts
     },
   },
@@ -37,15 +39,29 @@ export default {
 
       return posts
     },
-    sortByDate(posts) {
-      return posts.reverse((a, b) => {
+    filterByTag(posts) {
+      if (this.tag) {
+        return posts.filter((post) => {
+          if (
+            post.frontmatter.tags &&
+            post.frontmatter.tags.includes(this.tag)
+          ) {
+            return posts
+          }
+        })
+      }
+
+      return posts
+    },
+    sortByDateDesc(posts) {
+      return posts.sort((a, b) => {
         const x = a.frontmatter.date.toLowerCase()
         const y = b.frontmatter.date.toLowerCase()
         if (x < y) {
-          return -1
+          return 1
         }
         if (x > y) {
-          return 1
+          return -1
         }
         return 0
       })
