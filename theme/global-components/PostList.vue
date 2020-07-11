@@ -13,7 +13,6 @@ export default {
   },
   props: {
     directory: String,
-    item: String,
   },
   computed: {
     posts() {
