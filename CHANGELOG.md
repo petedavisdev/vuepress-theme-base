@@ -1,15 +1,12 @@
-# [0.4.0](https://github.com/petedavisdev/vuepress-theme-base/compare/0.3.1...0.4.0) (2020-07-11)
+## [0.4.1](https://github.com/petedavisdev/vuepress-theme-base/compare/0.4.0...0.4.1) (2020-07-28)
 
+# [0.4.0](https://github.com/petedavisdev/vuepress-theme-base/compare/0.3.1...0.4.0) (2020-07-11)
 
 ### Features
 
-* Tags([#9](https://github.com/petedavisdev/vuepress-theme-base/issues/9)) ([#10](https://github.com/petedavisdev/vuepress-theme-base/issues/10)) ([a7690bd](https://github.com/petedavisdev/vuepress-theme-base/commit/a7690bd72e21e94cb92da6dda2abf49ed81821dc))
-
-
+- Tags([#9](https://github.com/petedavisdev/vuepress-theme-base/issues/9)) ([#10](https://github.com/petedavisdev/vuepress-theme-base/issues/10)) ([a7690bd](https://github.com/petedavisdev/vuepress-theme-base/commit/a7690bd72e21e94cb92da6dda2abf49ed81821dc))
 
 ## [0.3.1](https://github.com/petedavisdev/vuepress-theme-base/compare/0.3.0...0.3.1) (2020-07-08)
-
-
 
 ## [0.3.2](https://github.com/petedavisdev/vuepress-theme-base/compare/0.3.1...0.3.2) (2020-07-09)
 
