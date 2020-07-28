@@ -10,3 +10,7 @@ tags:
 ---
 
 Lorem ipsum
+
+```md
+<MyComponent />
+```
