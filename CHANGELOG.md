@@ -1,3 +1,5 @@
+## [0.4.2](https://github.com/petedavisdev/vuepress-theme-base/compare/0.4.0...0.4.2) (2020-07-29)
+
 ## [0.4.1](https://github.com/petedavisdev/vuepress-theme-base/compare/0.4.0...0.4.1) (2020-07-28)
 
 # [0.4.0](https://github.com/petedavisdev/vuepress-theme-base/compare/0.3.1...0.4.0) (2020-07-11)
