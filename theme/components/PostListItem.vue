@@ -1,12 +1,12 @@
 <template>
   <article class="PostListItem">
     <h2 class="PostListItem-heading">
-      <RouterLink class="PostListItem-link" :to="post.path">{{
-        post.title
-      }}</RouterLink>
+      <RouterLink class="PostListItem-link" :to="post.path">
+        {{ post.title }}
+      </RouterLink>
     </h2>
-    <p v-if="post.frontmatter.summary" class="PostListItem-summary">
-      {{ post.frontmatter.summary }}
+    <p v-if="post.frontmatter.description" class="PostListItem-description">
+      {{ post.frontmatter.description }}
     </p>
     <DateTime :date="post.frontmatter.date" />
     <TagList :tags="post.frontmatter.tags || null" />
