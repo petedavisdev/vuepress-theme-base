@@ -1,11 +1,17 @@
 <template>
   <section class="PostList">
-    <PostListItem v-for="post in shownPosts" :key="post.id" :post="post" />
+    <PostListItem
+      v-for="post in shownPosts"
+      :key="post.id"
+      ref="item"
+      :post="post"
+    />
     <p v-if="!posts.length" class="PostList-empty">No posts found</p>
     <button
       v-if="currentLength < posts.length"
       class="PostList-more"
-      @click="currentLength += currentLength"
+      type="button"
+      @click="showMore"
     >
       Show more
     </button>
@@ -27,7 +33,6 @@ export default {
   data() {
     return {
       currentLength: +this.length || 10,
-      alternator: true,
     }
   },
   computed: {
@@ -87,13 +92,13 @@ export default {
         return 0
       })
     },
+    showMore() {
+      // retain focus position within the items
+      this.$refs.item[this.currentLength - 1].$el.querySelector('a').focus()
+
+      // double the number of items displayed
+      this.currentLength += this.currentLength
+    },
   },
 }
 </script>
-
-<style>
-.PostList-more {
-  position: sticky;
-  bottom: -100%;
-}
-</style>
