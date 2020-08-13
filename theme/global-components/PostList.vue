@@ -1,7 +1,14 @@
 <template>
   <section class="PostList">
-    <PostListItem v-for="post in posts" :key="post.id" :post="post" />
-    <p v-if="!posts.length">No posts found</p>
+    <PostListItem v-for="post in shownPosts" :key="post.id" :post="post" />
+    <p v-if="!posts.length" class="PostList-empty">No posts found</p>
+    <button
+      v-if="currentLength < posts.length"
+      class="PostList-more"
+      @click="currentLength += currentLength"
+    >
+      Show more
+    </button>
   </section>
 </template>
 
@@ -14,7 +21,14 @@ export default {
   },
   props: {
     directory: String,
+    length: String,
     tag: String,
+  },
+  data() {
+    return {
+      currentLength: +this.length || 10,
+      alternator: true,
+    }
   },
   computed: {
     posts() {
@@ -22,6 +36,9 @@ export default {
       const tagPosts = this.filterByTag(directoryPosts)
       const sortedPosts = this.sortByDateDesc(tagPosts)
       return sortedPosts
+    },
+    shownPosts() {
+      return this.posts.slice(0, this.currentLength)
     },
   },
   methods: {
@@ -75,7 +92,8 @@ export default {
 </script>
 
 <style>
-.PostList {
-  display: grid;
+.PostList-more {
+  position: sticky;
+  bottom: -100%;
 }
 </style>
