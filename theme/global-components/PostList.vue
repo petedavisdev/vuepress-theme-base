@@ -1,7 +1,20 @@
 <template>
   <section class="PostList">
-    <PostListItem v-for="post in posts" :key="post.id" :post="post" />
-    <p v-if="!posts.length">No posts found</p>
+    <PostListItem
+      v-for="post in shownPosts"
+      :key="post.id"
+      ref="item"
+      :post="post"
+    />
+    <p v-if="!posts.length" class="PostList-empty">No posts found</p>
+    <button
+      v-if="currentLength < posts.length"
+      class="PostList-more"
+      type="button"
+      @click="showMore"
+    >
+      Show more
+    </button>
   </section>
 </template>
 
@@ -14,7 +27,13 @@ export default {
   },
   props: {
     directory: String,
+    length: String,
     tag: String,
+  },
+  data() {
+    return {
+      currentLength: +this.length || 10,
+    }
   },
   computed: {
     posts() {
@@ -22,6 +41,9 @@ export default {
       const tagPosts = this.filterByTag(directoryPosts)
       const sortedPosts = this.sortByDateDesc(tagPosts)
       return sortedPosts
+    },
+    shownPosts() {
+      return this.posts.slice(0, this.currentLength)
     },
   },
   methods: {
@@ -70,12 +92,13 @@ export default {
         return 0
       })
     },
+    showMore() {
+      // retain focus position within the items
+      this.$refs.item[this.currentLength - 1].$el.querySelector('a').focus()
+
+      // double the number of items displayed
+      this.currentLength += this.currentLength
+    },
   },
 }
 </script>
-
-<style>
-.PostList {
-  display: grid;
-}
-</style>

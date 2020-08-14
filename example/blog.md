@@ -2,4 +2,4 @@
 
 Tags:
 <TagList />
-<PostList directory="blog" />
+<PostList directory="blog" length="3" />
