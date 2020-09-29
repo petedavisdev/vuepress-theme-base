@@ -11,7 +11,7 @@
 
     <slot name="headerAfter" />
 
-    <main class="Layout-main">
+    <main id="main" class="Layout-main">
       <slot name="mainStart" />
       <Content />
       <slot name="mainEnd" />
