@@ -5,6 +5,7 @@
     <header class="Layout-header">
       <slot name="headerStart" />
       <HomeLink />
+      <SkipLink />
       <NavPrimary />
       <slot name="headerEnd" />
     </header>
