@@ -1,3 +1,22 @@
+# [0.5.0](https://github.com/petedavisdev/vuepress-theme-base/compare/0.4.0...0.5.0) (2020-10-03)
+
+
+### Features
+
+* header improvements, skip link and logo ([#18](https://github.com/petedavisdev/vuepress-theme-base/issues/18)) ([#19](https://github.com/petedavisdev/vuepress-theme-base/issues/19)) ([c5be2cb](https://github.com/petedavisdev/vuepress-theme-base/commit/c5be2cb4783838a981119fbdfec18e1182d6b161))
+* PostList improvements ([#12](https://github.com/petedavisdev/vuepress-theme-base/issues/12)) ([#13](https://github.com/petedavisdev/vuepress-theme-base/issues/13)) ([2753963](https://github.com/petedavisdev/vuepress-theme-base/commit/27539633d80b8f827959902299fb8a9036c4666a))
+
+
+
+# [0.4.0](https://github.com/petedavisdev/vuepress-theme-base/compare/0.3.1...0.4.0) (2020-07-11)
+
+
+### Features
+
+* Tags([#9](https://github.com/petedavisdev/vuepress-theme-base/issues/9)) ([#10](https://github.com/petedavisdev/vuepress-theme-base/issues/10)) ([a7690bd](https://github.com/petedavisdev/vuepress-theme-base/commit/a7690bd72e21e94cb92da6dda2abf49ed81821dc))
+
+
+
 ## [0.4.2](https://github.com/petedavisdev/vuepress-theme-base/compare/0.4.0...0.4.2) (2020-07-29)
 
 ## [0.4.1](https://github.com/petedavisdev/vuepress-theme-base/compare/0.4.0...0.4.1) (2020-07-28)
