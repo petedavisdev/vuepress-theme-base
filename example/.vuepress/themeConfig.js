@@ -1,8 +1,9 @@
 module.exports = {
+  logo: 'v-logo.svg',
   nav: [
-    { text: 'Blog', link: '/blog/' },
-    { text: 'About', link: '/about/' },
-    { text: 'Contact', link: '/contact/' },
+    { text: 'Blog', link: '/blog.html' },
+    { text: 'About', link: '/about.html' },
+    { text: 'Contact', link: '/contact.html' },
     {
       text: 'GitHub',
       link: 'https://github.com/petedavisdev/vuepress-theme-base/',

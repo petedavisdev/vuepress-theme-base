@@ -1,6 +1,6 @@
 <template>
   <RouterLink class="HomeLink" to="/" title="Go to homepage">
-    <img v-if="$site.logo" class="HomeLink-logo" :src="$site.logo" />
-    <span class="HomeLink-text">{{ $site.title }}</span>
+    <img v-if="$themeConfig.logo" :src="$themeConfig.logo" :alt="$site.title" />
+    <span>{{ $site.title }}</span>
   </RouterLink>
 </template>

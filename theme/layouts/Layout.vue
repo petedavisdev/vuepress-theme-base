@@ -2,7 +2,7 @@
   <div class="Layout">
     <slot name="headerBefore" />
 
-    <header class="Layout-header">
+    <header id="header">
       <slot name="headerStart" />
       <HomeLink />
       <SkipLink />
@@ -12,7 +12,7 @@
 
     <slot name="headerAfter" />
 
-    <main class="Layout-main" id="main">
+    <main id="main">
       <slot name="mainStart" />
       <Content />
       <slot name="mainEnd" />
@@ -20,7 +20,7 @@
 
     <slot name="footerBefore" />
 
-    <footer class="Layout-footer">
+    <footer id="footer">
       <slot name="footerStart" />
       <EndCredit />
       <slot name="footerEnd" />
