@@ -12,7 +12,7 @@
 
     <slot name="headerAfter" />
 
-    <main id="main" class="Layout-main">
+    <main class="Layout-main" id="main">
       <slot name="mainStart" />
       <Content />
       <slot name="mainEnd" />
@@ -34,12 +34,14 @@
 import HomeLink from '@theme/components/HomeLink.vue'
 import EndCredit from '@theme/components/EndCredit.vue'
 import NavPrimary from '@theme/components/NavPrimary.vue'
+import SkipLink from '@theme/components/SkipLink.vue'
 
 export default {
   components: {
     HomeLink,
     EndCredit,
     NavPrimary,
+    SkipLink,
   },
 }
 </script>

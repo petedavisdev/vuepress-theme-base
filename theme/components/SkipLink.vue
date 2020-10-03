@@ -1,5 +1,5 @@
 <template>
-  <RouterLink class="SkipLink" to="#main">
+  <a class="SkipLink" href="#main">
     Skip to content
-  </RouterLink>
+  </a>
 </template>
