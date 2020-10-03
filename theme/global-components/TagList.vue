@@ -19,14 +19,14 @@ export default {
   },
   computed: {
     tagList() {
-      return this.tags === undefined ? this.$site.themeConfig.tags : this.tags
+      return this.tags === undefined ? this.$themeConfig.tags : this.tags
     },
   },
   methods: {
     getTagLink(tag) {
-      if (this.$site.themeConfig.tags) {
+      if (this.$themeConfig.tags) {
         const { link } =
-          this.$site.themeConfig.tags.find(
+          this.$themeConfig.tags.find(
             ({ text }) => text.toLowerCase() === tag.toLowerCase()
           ) || {}
 

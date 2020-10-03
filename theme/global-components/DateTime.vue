@@ -21,9 +21,9 @@ export default {
   },
   methods: {
     getTagLink(tag) {
-      if (this.$site.themeConfig.tags) {
+      if (this.$themeConfig.tags) {
         const { link } =
-          this.$site.themeConfig.tags.find(({ text }) => text === tag) || {}
+          this.$themeConfig.tags.find(({ text }) => text === tag) || {}
 
         return link
       }
