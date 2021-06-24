@@ -1,3 +1,16 @@
+## [0.5.4](https://github.com/petedavisdev/vuepress-theme-base/compare/0.5.2...0.5.4) (2021-06-24)
+
+
+
+## [0.5.2](https://github.com/petedavisdev/vuepress-theme-base/compare/0.5.0...0.5.2) (2021-06-24)
+
+
+### Features
+
+* PostList ([#12](https://github.com/petedavisdev/vuepress-theme-base/issues/12)) ([#20](https://github.com/petedavisdev/vuepress-theme-base/issues/20)) ([dabe2ff](https://github.com/petedavisdev/vuepress-theme-base/commit/dabe2ff2a2785b8d4ff5771e8038671a47f69f22))
+
+
+
 ## [0.5.3](https://github.com/petedavisdev/vuepress-theme-base/compare/0.5.2...0.5.3) (2021-06-24)
 
 
