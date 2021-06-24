@@ -15,6 +15,9 @@
       class="PostListItem-image"
       :src="post.frontmatter.image || post.frontmatter.images[0].image"
       alt
+      height="420"
+      width="300"
+      loading="lazy"
     />
   </article>
 </template>

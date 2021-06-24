@@ -32,7 +32,7 @@ export default {
   },
   data() {
     return {
-      currentLength: +this.length || 10,
+      currentLength: +this.length || 100,
     }
   },
   computed: {
