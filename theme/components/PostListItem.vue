@@ -11,9 +11,9 @@
     <DateTime :date="post.frontmatter.date" />
     <TagList :tags="post.frontmatter.tags || null" />
     <img
-      v-if="post.frontmatter.image"
+      v-if="post.frontmatter.image || post.frontmatter.images[0]"
       class="PostListItem-image"
-      :src="post.frontmatter.image"
+      :src="post.frontmatter.image || post.frontmatter.images[0]"
       alt
     />
   </article>
