@@ -13,7 +13,7 @@
     <img
       v-if="post.frontmatter.image || post.frontmatter.images[0]"
       class="PostListItem-image"
-      :src="post.frontmatter.image || post.frontmatter.images[0]"
+      :src="post.frontmatter.image || post.frontmatter.images[0].image"
       alt
     />
   </article>

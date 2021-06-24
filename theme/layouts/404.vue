@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <template v-slot:mainStart>
+    <template #mainStart>
       <h1>404</h1>
 
       <p>Looks like a broken link!</p>

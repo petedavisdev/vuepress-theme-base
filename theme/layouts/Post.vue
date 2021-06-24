@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <template v-slot:mainStart>
+    <template #mainStart>
       <h1>{{ $page.title }}</h1>
       <DateTime :date="$page.frontmatter.date" />
       <TagList :tags="$page.frontmatter.tags || null" />
